@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="635.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.pracController">
+   <children>
+      <VBox alignment="BOTTOM_LEFT" layoutX="-2.0" layoutY="-1.0" prefHeight="459.0" prefWidth="641.0">
+         <children>
+            <MenuBar prefHeight="48.0" prefWidth="597.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <SplitPane dividerPositions="0.29797979797979796" prefHeight="458.0" prefWidth="631.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="427.0" prefWidth="169.0">
+                     <children>
+                        <Button fx:id="stabut" layoutX="66.0" layoutY="47.0" mnemonicParsing="false" onAction="#start" prefHeight="30.0" prefWidth="73.0" text="开始" />
+                        <Button layoutX="66.0" layoutY="109.0" mnemonicParsing="false" onAction="#judge" prefHeight="30.0" prefWidth="73.0" text="批改" />
+                     </children></AnchorPane>
+                <AnchorPane fx:id="pane" minHeight="0.0" minWidth="0.0" prefHeight="425.0" prefWidth="474.0" />
+              </items>
+            </SplitPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
